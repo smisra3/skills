@@ -64,7 +64,6 @@
   <div>5th div</div>
   <div >6th div</div>
 
-
   <div>
     <div id="firstID" class="bg-red bg-red bg-red bg-red bg-red bg-green">s0</div>
     <p class="bg-green">s1</p>
@@ -72,8 +71,14 @@
     <div class="bg-aqua bg-green">Query div</div>
   </div>
   <p>This is my P tag</p>
+  <button id="primary-button">Click me</button>
 </body>
-
+<script>
+  const btn = document.getElementById('primary-button');
+  btn.addEventListener('click', function(event){
+    console.log('Hi!! I am clicked', event.target)
+  })
+</script>
 </html>
 
 inline > id > class > tag
